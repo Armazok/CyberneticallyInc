@@ -1,6 +1,6 @@
-import {IStockSchema} from "entities/Stock/model/types/stockSchema";
 import {AxiosInstance} from "axios";
 import {AnyAction, CombinedState, EnhancedStore, Reducer, ReducersMapObject} from "@reduxjs/toolkit";
+import {IStockSchema} from "../../../../entities/Stock/model/types/stockSchema";
 
 export interface IStateSchema {
 

@@ -1,7 +1,7 @@
 import {CombinedState, configureStore, Reducer, ReducersMapObject,} from '@reduxjs/toolkit';
-import {IStateSchema, IThunkExtraArg} from 'app/providers/StoreProvider/config/StateSchema';
 import {$api} from '../../../../shared/api/api';
 import {createReducerManager} from "../../../../app/providers/StoreProvider/config/reducerManager";
+import {IStateSchema, IThunkExtraArg} from "./StateSchema";
 
 export function createReduxStore(
     initialState?: IStateSchema,

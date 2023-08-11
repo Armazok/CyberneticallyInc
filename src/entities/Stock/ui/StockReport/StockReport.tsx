@@ -18,7 +18,6 @@ export const StockReport = ({}: IStockReport) => {
 
 
 
-
     return (
         <table className="min-w-full text-left text-sm font-light">
             <thead className="border-b font-medium dark:border-neutral-500 text-center">
@@ -28,9 +27,8 @@ export const StockReport = ({}: IStockReport) => {
             </thead>
             <tbody className="text-center">
             {
-                dataStock?.slice(0, 10).map((el, index) => {
+                dataStock?.slice(0, 10).map((el: any, index: number) => {
                     const indexStyle = indexStyles.find(style => style.index === index + 1);
-
                     return (
                         <tr
                             key={index}

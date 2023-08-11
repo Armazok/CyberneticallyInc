@@ -1,7 +1,7 @@
 import '../App.css';
 import {Suspense} from "react";
-import {PageLoader} from "widgets/PageLoader";
-import {StockPage} from "pages/StockPage";
+import {PageLoader} from "../widgets/PageLoader";
+import {StockPage} from "../pages/StockPage";
 
 function App() {
     return (

@@ -7,9 +7,9 @@
       "dom.iterable",
       "esnext"
     ],
-    "baseUrl": "node_modules",
+    "baseUrl": ".",
     "paths": {
-      "*": ["../src/*"],
+      "*": ["./src/*"],
     },
     "allowJs": true,
     "skipLibCheck": true,
