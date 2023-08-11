@@ -1,12 +1,13 @@
 import {memo, useCallback, useEffect, useState} from "react";
 import {Paginator} from "../../../widgets/Paginator";
-import {fetchStockData, StockTable} from "../../../entities/Stock";
+import {fetchStockData} from "../../../entities/Stock";
 import cls from './StockPage.module.css'
 import {useAppDispatch} from "../../../shared/lib/hooks/useAppDispatch";
 import {useSelector} from "react-redux";
 import {getStockData} from "../../../entities/Stock/model/selectors/getStockData/getStockData";
 import {DynamicModuleLoader, ReducersList} from "../../../shared/lib/components/DynamicModuleLoader";
 import {stockReducer} from "../../../entities/Stock/model/slice/stockSlice";
+import {StockReport} from "../../../entities/Stock/ui/StockReport/StockReport";
 
 
 const reducers: ReducersList = {
@@ -35,9 +36,8 @@ const StockPage = () => {
 
     return (
         <DynamicModuleLoader reducers={reducers}>
-
             <div className={cls.StockPage}>
-                <StockTable />
+                <StockReport/>
             </div>
 
             <div className={cls.Paginator}>
