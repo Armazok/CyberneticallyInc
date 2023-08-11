@@ -6,7 +6,7 @@ import {StockPage} from "../pages/StockPage";
 function App() {
     return (
         <div className="App__container">
-            <Suspense fallback={<PageLoader/>}>
+            <Suspense fallback={<PageLoader lazyLoad={true}/>}>
                 <div className="wrapper">
                     <StockPage/>
                 </div>

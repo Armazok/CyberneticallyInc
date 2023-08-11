@@ -5,9 +5,16 @@ interface IPaginator {
     totalPages: number
     currentPage: string | number
     onPageChange: (currentPage: number) => void
+    isLoading?: boolean
 }
 
-export const Paginator = memo(({totalPages, currentPage, onPageChange}: IPaginator) => (
+export const Paginator = memo(({
+                                   totalPages,
+                                   currentPage,
+                                   onPageChange,
+                                   isLoading
+                               }: IPaginator) => (
+
     <div>
         <Button
             textBtn={'Prev'}
