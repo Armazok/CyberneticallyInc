@@ -1,0 +1,24 @@
+/*.StockTable {*/
+/*    padding: 10px 15px;*/
+/*    border-radius: 20px;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    margin-bottom: 40px;*/
+/*    position: relative;*/
+/*    border: 2px solid;*/
+/*}*/
+
+/*.StockTable::before {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    bottom: -15px; !* Располагаем псевдоэлемент немного ниже основного контента *!*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    height: 2px; !* Высота полосы *!*/
+/*    background-color: rgba(171, 168, 168, 0.2);*/
+/*}*/
+
+/*.data{*/
+/*    display: flex;*/
+/*}*/
+

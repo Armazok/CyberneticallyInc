@@ -1,0 +1,15 @@
+.App__container {
+}
+
+.wrapper {
+    margin-top: 50px;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+[class*="__container"] {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+

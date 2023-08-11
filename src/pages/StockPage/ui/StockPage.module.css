@@ -1,0 +1,15 @@
+.StockPage {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(156, 163, 175, 0.6);
+    border-radius: 20px;
+}
+
+
+
+.Paginator{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
